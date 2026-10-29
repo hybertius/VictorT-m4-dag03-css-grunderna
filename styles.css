@@ -1,9 +1,88 @@
-/* Dag 3: grunder och boxmodell. Följ README.md och design.md.
-   TODO 1: box-sizing (överst)
-   TODO 2: body
-   TODO 3: header och footer
-   TODO 4: nav ul (ta bort punkter)
-   TODO 5: article (kort)
-   TODO 6: main (centrerat, max-bredd)
-   TODO 7: .knapp
-*/
+/* W/H inkluderar nu padding & borders.
+   Lättare att resonera kring layout och storlek. */
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   background-color: #fffaf3;
+   color: #222222;
+}
+
+#hero {
+  background-color: #f3e3cf;
+}
+
+h1,
+h2,
+h3 {
+  color: #3b2418;
+}
+
+header h1 {
+  color: white;
+}
+
+
+header {
+   background-color: #5b3a29;
+   color: white;
+   padding: 16px 24px;
+}
+
+footer {
+   background-color: #2b1c14;
+   color: white;
+   padding: 16px 24px;
+}
+
+header a,
+footer a {
+   color: white;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+article {
+   background-color: #ffffff;
+   border: 1px solid #e3d5c3;
+   border-radius: 8px;
+   padding: 16px;
+   margin-bottom: 16px;
+}
+
+article img {
+   max-width: 100%;
+   height: auto;
+}
+main {
+  max-width: 1100px;
+  /* Auto margins splittar överskottet på båda sidor och centrerar innehållsområdet */
+  margin: 0 auto;
+
+  padding: 24px;
+}
+
+.pris {
+  color: #8c1010;
+}
+
+.knapp {
+  display: inline-block;
+  background-color: #8c1010;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.knapp:hover {
+  background-color: #6f0c0c;
+}
