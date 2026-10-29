@@ -86,3 +86,15 @@ main {
 .knapp:hover {
   background-color: #6f0c0c;
 }
+/* box-modell för artikel (ej för knapp)
+
+margin
+└─ border (1px)
+   └─ padding (16px)
+      └─ content
+         - image
+         - heading
+         - text
+         - price
+
+*/
